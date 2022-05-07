@@ -3,60 +3,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Review Generator</title>
-    </head>
-    
-    <style>
-        @import url('./style.css');
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;900&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@400;600;900&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
-    <body>
-        <section class="header">
-            <nav>
-                <a href="index.html"><img src="img/frg_transparent.png"></a>
-                <div class="nav-links">
-                    <ul>
-                        <li>
-                            <a href="">HOME</a>
-                        </li>
-                        <li>
-                            <a href="">PRICING</a>
-                        </li>
-                        <li>
-                            <a href="">SUPPORT</a>
-                        </li>
-                        <li>
-                            <a href="">ABOUT</a>
-                        </li>
-                        <li> 
-                            <a href="">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
-        
-        <section class="section-body" id="first">
-            <h1>Curvy</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in, cumque eum quibusdam qui, temporibus molestiae quisquam ratione asperiores et dolores? Dicta repudiandae minima sit laborum natus debitis molestiae veniam.</p>
-            <div class="curve"></div>
-        </section>
-        <section class="section-body" id="second">
-            <h1>Curvy</h1>
-            <p>Necessitatibus aliquam, iste perspiciatis tempore iure, cumque dolore quod omnis ducimus id, libero veritatis vero beatae. Unde excepturi molestiae quod, ullam dolorem esse ipsum natus similique, at cumque eius dolore.</p>
-        </section>
-        <section class="section-body" id="third">
-            <h1>Curvy</h1>
-            <p>Officiis cumque aliquam qui aut, voluptatem fugit officia, omnis dolores magnam nam possimus molestiae commodi reprehenderit sunt recusandae perferendis, repellendus dolorum ipsum fuga facilis. Veniam iste rerum eius nisi pariatur.</p>
-        </section>
-        <section class="section-body"id="fourth">
-            <h1>Curvy</h1>
-            <p>Fugiat, enim molestias libero quos eum illo delectus. Dolores aspernatur laboriosam non, ipsum ut veritatis, ratione nesciunt exercitationem magni amet voluptatum laborum. Voluptatum inventore temporibus dolor, consequuntur cum rerum cumque!</p>
-        </section>
+</head>
+
+<style>
+    @import url('./style.css');
+</style>
+<script src="slideshow.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;900&family=Ubuntu+Mono:wght@700&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@400;600;900&family=Ubuntu+Mono:wght@700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/frg_transparent.png"></a>
+            <div class="nav-links"> 
+                <ul>
+                    <li>
+                        <a href="#first">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#second">REVIEWS</a>
+                    </li>
+                    <li>
+                        <a href="">SUPPORT</a>
+                    </li>
+                    <li>
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#fifth">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="section-body" id="first">
+        <h1>OUR GOAL</h1>
+        <p id="section-body-content">FAKE REVIEWS GENERATED WITH A SINGLE <SPAN>CLICK</SPAN></p>
+        <div class="curve1"></div>
+    </section>
+    <section class="section-body" id="second">
+        <h1>Curvy</h1>
+        <p>Necessitatibus aliquam, iste perspiciatis tempore iure, cumque dolore quod omnis ducimus id, libero veritatis
+            vero beatae. Unde excepturi molestiae quod, ullam dolorem esse ipsum natus similique, at cumque eius dolore.
+        </p>
+        <div class="curve2"></div>
+    </section>
+    <section class="section-body" id="third">
+        <h1>How to</h1>
+        <p>Officiis cumque aliquam qui aut, voluptatem fugit officia, omnis dolores magnam nam possimus molestiae
+            commodi reprehenderit sunt recusandae perferendis, repellendus dolorum ipsum fuga facilis. Veniam iste rerum
+            eius nisi pariatur.</p>
+        <img name="slide1" id="mySlider1">
+    </section>
+
+    <div class="spacer layer2">
+
+
+    </div>
+
+    <section class="section-body" id="fourth">
+        <!-- <img name="slide2" id="mySlider2"> -->
+        <h1>Curvy</h1>
+        <p>Fugiat, enim molestias libero quos eum illo delectus. Dolores aspernatur laboriosam non, ipsum ut veritatis,
+            ratione nesciunt exercitationem magni amet voluptatum laborum. Voluptatum inventore temporibus dolor,
+            consequuntur cum rerum cumque!</p>
+
+    </section>
+    <div class="spacer layer1"></div>
+    <section class="section-body" id="fifth">
+    </div>
    
-    </body>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">location</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                            <a href="#"><i class="fab fa-twitter"></i> </a>
+                            <a href="#"><i class="fab fa-linkedin"></i> </a>
+                            <a href="#"><i class="fab fa-instagram"></i> </a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
 </html>
