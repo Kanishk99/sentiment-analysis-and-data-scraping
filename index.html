@@ -8,7 +8,9 @@
 <style>
     @import url('./style.css');
 </style>
+<script src="form-display.js"></script>
 <script src="slideshow.js"></script>
+<script src="form-transition.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -22,10 +24,36 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 <body>
+    <div class="form-pop">
+        <div class="bg-modal">
+            <div class="form-box">
+                <button  class="close" onclick="close_form()">+</button>
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span id="check-box-text">Remember Password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="E-Mail" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span id="check-box-text">I agree to the terms &
+                        conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="img/frg_transparent.png"></a>
-            <div class="nav-links"> 
+            <a id="home_image" href="index.html"><img src="img/frg_transparent.png"></a>
+            <div class="nav-links">
                 <ul>
                     <li>
                         <a href="#first">HOME</a>
@@ -42,12 +70,17 @@
                     <li>
                         <a href="#fifth">CONTACT US</a>
                     </li>
+
                 </ul>
             </div>
+            <button type="button" class="login-btn" id="login-btn" onclick="open_form()">LOGIN</button>
         </nav>
     </section>
+    
+
 
     <section class="section-body" id="first">
+        
         <h1>OUR GOAL</h1>
         <p id="section-body-content">FAKE REVIEWS GENERATED WITH A SINGLE <SPAN>CLICK</SPAN></p>
         <div class="curve1"></div>
@@ -82,8 +115,8 @@
     </section>
     <div class="spacer layer1"></div>
     <section class="section-body" id="fifth">
-    </div>
-   
+        </div>
+
         <footer class="footer">
             <div class="container">
                 <div class="row">
